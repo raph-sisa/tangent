@@ -11,11 +11,6 @@ export interface Message {
   timestamp: Date;
 }
 
-interface HighlightRange {
-  start: number;
-  end: number;
-}
-
 interface ChatHistoryProps {
   messages: Message[];
   onBranch?: (selectedText: string, messageId: string) => void;

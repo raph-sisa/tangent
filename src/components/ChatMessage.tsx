@@ -55,7 +55,7 @@ export default function ChatMessage({
     const sorted = [...highlights].sort((a, b) => a.start - b.start);
     const nodes: React.ReactNode[] = [];
     let lastIdx = 0;
-    sorted.forEach((h, i) => {
+    sorted.forEach((h) => {
       if (h.start > lastIdx) {
         nodes.push(content.slice(lastIdx, h.start));
       }
